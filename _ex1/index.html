@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1 | lab1 | cours1-4</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img width="100"  src="./images/html_logo.png" alt="logo">
+        </header>
+    <main>
+        <h1>Inscrivez-vous</h1>
+    <form action="#">
+        <label>
+            <span>Nom Complet :</span>
+            <input type="text" name="name" size="30" maxlength="100">
+        </label>
+        <br>
+
+        <label>
+            <span>Courriel :</span>
+            <input type="email" name="email" size="30" maxlength="100">
+        </label>
+        <br>
+
+        <label id="label-checkbox-condition">
+            <span>Acceptez les conditions :</span>
+            <input type="checkbox" name="approbation" value="approuvé"> 
+        </label>
+        <br>
+
+        <div id="radios-wrapper"><span>Sexe :</span>
+            <div class="radio-wrapper"><input type="radio" name="genre" value="Homme"> <span>Homme</span></div>
+            <div class="radio-wrapper"><input type="radio" name="genre" value="Femme"> <span>Femme</span></div>
+            <div class="radio-wrapper"><input type="radio" name="genre" value="Autre" > <span>Autre</span></div>
+        </div>
+        <br>
+
+          <label id="villes-wrapper" for="ville">
+            <span>Ville :</span>
+            <select name="ville" id="ville">
+                <option value="Montréal">Montréal</option>
+                <option value="Québec">Québec</option>
+                <option value="Sherbrook">Sherbrook</option>
+                <option value="Trois-rivières">Trois-rivières</option>
+                <option value="Sept-îles">Sept-îles</option>
+                <option value="Alma">Alma</option>
+                <option value="Rimouski">Rimouski</option>
+                <option value="Baie-Comeau">Baie-Comeau</option>
+                <option value="Val-D'or">Val-D'or</option>
+          </select>
+          </label>
+          <br>
+
+        <label id="cv-upload">
+            <span>Votre CV :</span>
+            <input type="file" name="name" size="30" accept=".doc, .pdf">
+        </label>
+        <br>
+
+        <input id="envoyer" type="button" value="Envoyer">
+          
+
+
+
+
+
+
+    </form>
+    </main>
+    <footer>
+        <p>Ait Assou &copy; 2026 | Lab 1</p>
+    </footer>
+    </div>
+</body>
+</html>
