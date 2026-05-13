@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+table, td, th {
+    border: 1px solid gray;
+}
+
+td, th {
+    padding: 0.3rem;
+}
+
+main {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 0.6rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer p {
+    text-align: center;
+    color: #ef4d0a70;
+    font-size: 0.8rem;
+}
+
+
