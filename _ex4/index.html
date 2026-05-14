@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4 | lab1 | cours1-4</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+        body {
+            background-color: #fefefe;
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            padding-bottom: 0.3rem;
+            width: fit-content;
+            margin: 2rem auto;
+            border-bottom: 1px solid orange;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            
+            
+            
+        }
+        .boite-flottante {
+            width: 5rem;
+            height: 5rem;
+            background-color: bisque;
+            margin: 1rem;
+            float:left;
+            z-index: 0;
+            animation: bouger 5s infinite alternate-reverse;
+            transform: translateX(-5%);
+        }
+
+        @keyframes bouger {
+            from 0% {
+                margin-left: 1rem;
+                margin-top: 10rem;
+            }
+            50% {
+                margin-top: 5rem;
+                margin-left: 10rem;
+                /* transform: translateY(-50%); */
+            }
+
+
+            100% {
+                margin-top: 1rem;
+                margin-left: 1rem;
+            } 
+        }
+
+
+        footer {
+            position: absolute;
+            bottom: 0.3rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer p {
+            text-align: center;
+            color: #ef4d0a70;
+            font-size: 0.8rem;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 100%;
+        }
+
+        main {
+            width: 100%;
+        }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <img width="100"  src="./images/html_logo.png" alt="logo">
+    </header>
+    <main>
+        <h1>Boxe flottant avec animation</h1>
+        <div class="boite-flottante"></div>
+        <section>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum illum officiis laboriosam, quis, eaque, esse tempora temporibus mollitia facere voluptatum dolorem nisi iure sequi nobis ducimus voluptatibus nulla! Accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam sed quod dolorum veniam? Aliquam doloremque ab veniam dolorem, voluptas assumenda ipsum porro voluptatibus quos ipsam, voluptatum sed, odio neque?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid fugit corrupti provident officiis odio similique iusto nesciunt? Dicta ipsum ducimus quo, exercitationem sit aliquam corporis repellat eos nulla autem.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, ratione! Et dolore quidem placeat reiciendis aliquid doloremque, ipsam, sint ullam unde fugit rerum! Nulla deleniti tempore architecto soluta molestiae voluptatibus!</p>
+            </article>
+
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum illum officiis laboriosam, quis, eaque, esse tempora temporibus mollitia facere voluptatum dolorem nisi iure sequi nobis ducimus voluptatibus nulla! Accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam sed quod dolorum veniam? Aliquam doloremque ab veniam dolorem, voluptas assumenda ipsum porro voluptatibus quos ipsam, voluptatum sed, odio neque?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid fugit corrupti provident officiis odio similique iusto nesciunt? Dicta ipsum ducimus quo, exercitationem sit aliquam corporis repellat eos nulla autem.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, ratione! Et dolore quidem placeat reiciendis aliquid doloremque, ipsam, sint ullam unde fugit rerum! Nulla deleniti tempore architecto soluta molestiae voluptatibus!</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Ait Assou &copy; 2026 | Lab 1 ex4</p>
+    </footer>
+    </div>
+</body>
+</html>
