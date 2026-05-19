@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex4 | lab1 | cours1-4</title>
+    <link
+  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
     <style>
         * {
         padding: 0;
@@ -36,7 +39,7 @@
             
             
         }
-        .boite-flottante {
+        #boite-flottante {
             width: 5rem;
             height: 5rem;
             background-color: bisque;
@@ -45,6 +48,10 @@
             z-index: 0;
             animation: bouger 5s infinite alternate-reverse;
             transform: translateX(-5%);
+
+            display: grid;
+            place-items: center;
+            
         }
 
         @keyframes bouger {
@@ -68,16 +75,20 @@
 
         footer {
             position: absolute;
-            bottom: 0.3rem;
+            bottom: 1rem;
             left: 50%;
             transform: translateX(-50%);
         }
 
-        footer p {
-            text-align: center;
-            color: #ef4d0a70;
-            font-size: 0.8rem;
+        .hide {
+            background-color: red;
         }
+
+footer p {
+    text-align: center;
+    color: #ef4d0a70;
+    font-size: 0.8rem;
+}
 
 
         @media screen and (max-width: 768px) {
@@ -96,11 +107,13 @@
 <body>
     <div class="container">
         <header>
-        <img width="100"  src="./images/html_logo.png" alt="logo">
+        <img width="200"  src="./images/logo.png" alt="logo">
     </header>
     <main>
         <h1>Boxe flottant avec animation</h1>
-        <div class="boite-flottante"></div>
+        <div id="boite-flottante">
+            <h5>Je flotte !</h5>
+        </div>
         <section>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laborum illum officiis laboriosam, quis, eaque, esse tempora temporibus mollitia facere voluptatum dolorem nisi iure sequi nobis ducimus voluptatibus nulla! Accusantium!</p>
@@ -120,8 +133,10 @@
     </main>
 
     <footer>
-        <p>Ait Assou &copy; 2026 | Lab 1 ex4</p>
+            <p>Ait Assou &copy; 2026 | lab1 ex1  <a href="https://github.com/ait-assou/laboratoire1cours1-4.git"><i class="fa-brands fa-square-github"></i></a></p>
+
     </footer>
     </div>
+
 </body>
 </html>

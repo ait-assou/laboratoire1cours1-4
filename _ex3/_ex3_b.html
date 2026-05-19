@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex2 | lab1 | cours1-4</title>
-    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
         h1 {
             color: orange;
@@ -37,6 +38,7 @@
             color: #fff;
             border-radius: 0.3rem;
             min-width: 4rem;
+            text-align: center;
         }
 
         .row {
@@ -45,10 +47,31 @@
             align-items: center;
             column-gap: 0.3rem;
         }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+
+        }
+
+        main {
+            width: 100%;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
-    <article>
+
+    <div class="container">
+        <header>
+        <img width="200"  src="./images/logo.png" alt="logo">
+    </header>
+    <main>
+        <article>
         <h1>Mon article</h1>
         <section>
             <h2>Première section</h2>
@@ -64,6 +87,12 @@
     <div class="row">
         <a href="index.html">Accueil</a>
         <a href="_ex3_c.html">Exercice 3c</a>
+    </div>
+    </main>
+
+    <footer>
+            <p>Ait Assou &copy; 2026 | lab1 ex3-b  <a href="https://github.com/ait-assou/laboratoire1cours1-4.git"><i class="fa-brands fa-square-github"></i></a></p>
+    </footer>
     </div>
 </body>
 </html>

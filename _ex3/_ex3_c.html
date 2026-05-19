@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX3 C</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
         #hidden {
             /* display: none; */
@@ -19,6 +21,7 @@
             color: #fff;
             border-radius: 0.3rem;
             min-width: 4rem;
+            text-align: center;
         }
 
         .row {
@@ -27,10 +30,34 @@
             align-items: center;
             column-gap: 0.3rem;
         }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+
+        }
+
+        main {
+            width: 100%;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
     </style>
 </head>
 <body>
-    <p>
+
+     <div class="container">
+        <header>
+        <img width="200"  src="./images/logo.png" alt="logo">
+    </header>
+
+
+    <main>
+        <p>
         <strong>Moscow mule</strong> est un cocktail à base de voodka, de bière de gingembre épicée et de jus de citron vert.
     </p>
 
@@ -42,5 +69,11 @@
         <a href="index.html">Accueil</a>
         <a href="_ex3_d.html">Exercice 3d</a>
     </div>
+    </main>
+
+    <footer>
+            <p>Ait Assou &copy; 2026 | lab1 ex3-c  <a href="https://github.com/ait-assou/laboratoire1cours1-4.git"><i class="fa-brands fa-square-github"></i></a></p>
+    </footer>
+     </div>
 </body>
 </html>
